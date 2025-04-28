@@ -42,4 +42,5 @@ This is a merge sort until the arrays have fewer than 10 elements, then it does 
     Insertion sort is basically just as fast for lists with 10ish items or less.
 
 5) What issues can you see with a recursive sorting technique like merge sort?
-    If an item has many digits then recursive sorting would be quite inefficient.
+    If an item has many digits then recursive sorting would be quite inefficient.  It also will continue splitting the functions all the way down to
+    when there are 0, which repeats the functions and makes it take more time.  This is why using something like TimSort may be useful.
